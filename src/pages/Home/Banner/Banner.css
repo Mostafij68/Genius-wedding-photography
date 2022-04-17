@@ -1,0 +1,41 @@
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h2{
+    position: absolute;
+    color: #dfdfdf;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* responsive mobile */
+@media only screen and (max-width: 576px) {
+    .banner h2{
+        font-size: 15px;
+        padding: 10px;
+        margin: 0 15px;
+    }
+}
+/* responsive tablet */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .banner h2{
+        font-size: 30px;
+        padding: 20px;
+    }
+}

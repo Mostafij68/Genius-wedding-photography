@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* custom color */
+.bg-1{
+  background: #264653 !important;
+}
+.text-1{
+  color: #264653 !important;
+}
+.bg-2{
+  background: #E9C46A !important;
+}
+.text-2{
+  color: #E9C46A !important;
+}
