@@ -16,6 +16,8 @@ const Login = () => {
                     </form>
                     <p className='text-light my-3'>Haven't account? <Link className='text-2 text-decoration-none' to={"/register"}>Create an account</Link>
                     </p>
+                    <p className='text-light my-3'><Link className='text-2 text-decoration-none' to={"/register"}>Forget password</Link>
+                    </p>
                     <SocialLogin></SocialLogin>
                 </div>
                 <div className="col-lg-4 col-md-3 col-sm-2"></div>
