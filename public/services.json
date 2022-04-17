@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "price": "$999",
+        "img": "../src/images/service/wedding1.jpg",
+        "name": "Basics",
+        "description": "4 hours of Wedding Day Coverage. 1 photographer Engagements. Online Gallery to view and order prints. DVD with high resolution Images."
+    },
+    {
+        "id": 2,
+        "price": "$1,320",
+        "img": "../src/images/service/wedding2.jpg",
+        "name": "Essential",
+        "description": "5 hours of Wedding Day Coverage. 1 photographer Engagements and Bridals. Online Gallery to view and order prints. $100 Print Credit. DVD with high resolution Images. Costume wedding guest album."
+    },
+    {
+        "id": 3,
+        "price": "$1,750",
+        "img": "../src/images/service/wedding3.jpg",
+        "name": "",
+        "description": "6 hours of Wedding Day Coverage. 2 photographer Engagements and Bridals. Online Gallery to view and order prints. $200 Print Credit. DVD with high resolution Images. 11x14 Engagement and 16x20 Bridals. Costume wedding guest album. 8x8 costume wedding album."
+    }
+]
