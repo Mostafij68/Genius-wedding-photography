@@ -2,9 +2,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h4>footer</h4>
-        </div>
+        <footer className='w-100 bg-1 text-2 text-center mt-5'>
+            <div>
+                <p className='p-3 m-0'>&copy; Copyright {new Date().getFullYear()} Genius-wedding-photography.com</p>
+            </div>
+        </footer>
     );
 };
 
