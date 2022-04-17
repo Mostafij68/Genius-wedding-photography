@@ -2,12 +2,14 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './pages/About/About';
 import Blogs from './pages/Blogs/Blogs';
+import Checkout from './pages/Checkout/Checkout';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/Shared/NotFound/NotFound';
+import RequireAuth from './pages/Shared/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -15,6 +17,11 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/services/:checkoutId' element={
+          <RequireAuth>
+            <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
