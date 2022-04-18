@@ -50,3 +50,7 @@
 .text-2{
   color: #E9C46A !important;
 }
+.btn:hover{
+  color: #eee !important;
+  background: #1f3a45 !important;
+}
