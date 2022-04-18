@@ -6,7 +6,7 @@ import './Banner.css';
 const Banner = () => {
     return (
         <div className='banner'>
-            <h2>Capture your wedding with Genius Photographer</h2>
+            <h2 className='text-2'>Capture your wedding with Genius Photographer</h2>
             <img className='mw-100 mh-100' src={banner} alt="" />
         </div>
     );

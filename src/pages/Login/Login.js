@@ -4,6 +4,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../Register/SocialLogin/SocialLogin';
 import Spiner from '../Shared/Spiner/Spiner';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -36,6 +38,7 @@ const Login = () => {
     const handleResetPassword = () => {
         const email = emailRef.current.value;
         sendPasswordResetEmail(email);
+        toast('Sent email')
     };
 
     return (
@@ -66,6 +69,7 @@ const Login = () => {
                         sending ? <Spiner></Spiner> : ''
                     }
                     <SocialLogin></SocialLogin>
+                    <ToastContainer></ToastContainer>
                 </div>
                 <div className="col-lg-4 col-md-3 col-sm-2"></div>
             </div>

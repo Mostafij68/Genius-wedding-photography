@@ -12,7 +12,7 @@ const Header = () => {
     };
 
     return (
-        <header>
+        <header className='sticky-top'>
             <nav className="navbar navbar-expand-lg navbar-dark bg-1">
                 <div className="container">
                     <Link to='/' className='navbar-brand'>Genius Wedding Photography</Link>
